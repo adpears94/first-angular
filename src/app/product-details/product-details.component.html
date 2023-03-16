@@ -1,0 +1,21 @@
+<div class="always-wrap-it-all-in-a-wrapper">
+  <h2>Product Details</h2>
+
+  <div *ngIf="product">
+    <h3>{{ product?.name }}</h3>
+    <h4>{{ product?.price | currency }}</h4>
+    <p>{{ product?.description }}</p>
+    <button class="mo-fucking-btn" (click)="doSomeWickedShit()">Buy</button>
+  </div>
+
+  <!-- think of this as your ? : ternarny statements -->
+  <div *ngIf="wickedShitPressed">
+    <h3>Reviews</h3>
+  </div>
+
+  <!-- thik of this binding as your map function in react -->
+  <div *ngFor="let poke of superCoolList">
+    <h3>{{ poke.name }}</h3>
+    <h4>{{ poke.id }}</h4>
+    </div>
+</div>
