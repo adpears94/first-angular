@@ -10,6 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { MattParissComponent } from './matt-pariss/matt-pariss.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from  '@angular/common/http';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent}
+      { path: 'products/:productId', component: ProductDetailsComponent},
+      { path: 'help', component: MattParissComponent}
     ]),
     HttpClientModule
   ],
@@ -26,7 +28,8 @@ import { HttpClientModule } from  '@angular/common/http';
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    MattParissComponent
   ],
  
   providers: [],

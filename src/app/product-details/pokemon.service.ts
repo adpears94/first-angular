@@ -8,7 +8,7 @@ export class PokemonBullShitCall {
     constructor(private http: HttpClient) { }
     
     getPokemon(){
-        return this.http.get('https://pokeapi.co/api/v2/pokemon/1/');
+        return this.http.get('https://pokeapi.co/api/v2/pokemon/?limit=100');
     }
 }
 
