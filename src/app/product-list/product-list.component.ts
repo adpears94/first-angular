@@ -19,11 +19,10 @@ export class ProductListComponent {
   }
 
   ngOnInit() {
-    const pokemon = this.pokemonService.getPokemon().subscribe(res => {
+    const pokemon =  this.pokemonService.getPokemon().subscribe(res => {
      return res
   
      })
-      console.log(pokemon)
 
     this.pokemonService.getPokemon().subscribe(res => {
       this.pokemon = res
