@@ -10,7 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HttpClientModule } from  '@angular/common/http';
-import { MattParissComponent } from './matt-pariss/matt-pariss.component';
+
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { MattParissComponent } from './matt-pariss/matt-pariss.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent},
-      { path: 'help', component: MattParissComponent}
+      
     ]),
     HttpClientModule
   ],
@@ -29,7 +29,7 @@ import { MattParissComponent } from './matt-pariss/matt-pariss.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    MattParissComponent
+    
   ],
  
   providers: [],

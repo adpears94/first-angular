@@ -13,7 +13,7 @@ export class ProductDetailsComponent implements OnInit {
 
   product: Product | undefined;
   wickedShitPressed: boolean = false;
-  pokemon: any;
+  pokemon: Object | undefined;
   public superCoolList = [
     {name: 'Bulbasaur', id: 1},
     {name: 'Ivysaur', id: 2},
@@ -34,12 +34,15 @@ export class ProductDetailsComponent implements OnInit {
     
 
    this.pokemonService.getPokemon().subscribe(res => {
-    this.pokemon = res;
-    // console.log(this.pokemon.results)
+    this.pokemon = res
+    console.log(this.pokemon)
 
    })
+
+   
   
   }
+  
   
 
   doSomeWickedShit(){

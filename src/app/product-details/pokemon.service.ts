@@ -5,11 +5,15 @@ import { dosDateTimeToDate } from 'yauzl';
 
 @Injectable({providedIn: 'root'})
 export class PokemonBullShitCall {
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient ) { }
     
     getPokemon(){
         return this.http.get('https://pokeapi.co/api/v2/pokemon/?limit=100');
     }
+
+    // getspecificPokemon(poke){ 
+    //     return this.http.get(`https://pokeapi.co/api/v2/pokemon/${poke}`);
+    // }
 }
 
 //its working
